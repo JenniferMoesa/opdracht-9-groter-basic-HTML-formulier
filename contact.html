@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- hier zet je de code in de body tags-->
+    <header class="pink-border">
+        <h1 class="title"> &#9829; Contact &#9829;</h1>
+    </header>
+
+    <nav class="pink-border">
+        <ul >
+            <li class="navigation-links">
+                <a href="index.html"><h3>Homepagina</h3></a>
+            </li>
+            <li class="navigation-links">
+                <a href="gerechten.html"><h3>Gerechten</h3></a>
+            </li>
+            <li class="navigation-links">
+                <a href="snacks.html"><h3>Snacks</h3></a>
+            </li>
+            <li class="navigation-links">
+                <a href="about.html"><h3 >Over mij</h3></a>
+            </li>
+            <li class="navigation-links">
+                <a href="contact.html"><h3 >Contact</h3></a>
+            </li>
+        </ul>
+    </nav>
+    
+    <form class="pink-border" name="contact" method="POST" data-netlify="true">
+        <!---------------------- Personalia --------------------------------->
+        <label for="firstname">Voornaam:</label><br>
+        <input type="text" id="firstname" name="firstname"><br>
+        <label for="lastname">Achternaam:</label><br>
+        <input type="text" id="lastname" name="lastname"><br>
+        <label for="email">Email:</label><br>
+        <input type="text" id="email" name="email"><br>
+        <label for="tel">Telefoon:</label><br>
+        <input type="text" id="telephone" name="telephone"><br>
+        <label for="birthday">Geboortedatum:</label><br>
+        <input type="date" id="birthday" name="birthday"><br>
+        
+        <!----------------------- Geslacht ------------------------------------>
+         <p>Geslacht:</p>
+            <input type="radio" id="male"name="gender" value="male">
+            <label for="male">Man</label>
+            <input type="radio" id="female"name="gender" value="female">
+            <label for="female">Vrouw</label>
+            <input type="radio" id="gender-x"name="gender" value="gender-x">
+            <label for="gender-x">X</label><br><br>
+      
+        <!---------------------- Favoriete cuisine ----------------------------->
+         <p>Favoriete cuisine:</p>
+         <input type="checkbox" id="keuken1" name="keuken1" value="Surinaams">
+         <label for="keuken1"> Surinaams</label>
+         <input type="checkbox" id="keuken2" name="keuken2" value="Javaans">
+         <label for="keuken2"> Javaans</label>
+         <input type="checkbox" id="keuken3" name="keuken3" value="Hindoestaans">
+         <label for="keuken3"> Hindoestaans</label>
+         <input type="checkbox" id="keuken4" name="keuken4" value="Creools">
+         <label for="keuken4"> Creools</label><br><br>
+
+         <label for="favcolor">Favoriete kleur schort:</label>
+         <input type="color" id="favcolor" name="favcolor" value="#ffc0cb"><br><br>
+
+
+        <!------------------------- biografie --------------------------------->
+        <label for="biography">Biografie:</label><br>
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <br><br>
+
+        <!------------------------ Upload een recept --------------------------->
+        <p>Upload een recept:</p>
+        <input type="file" id="myFile" name="filename"><br><br>
+
+        <!------------------------ Reset en submit --------------------------------------->
+       <p>Klik op de reset knop als je het formulier wilt aanpassen:</p>
+       <input type="reset" value="Reset">
+       <p>Indien je geheel tevreden bent, kun je op de verzenden knop drukken:</p>
+        <input type="submit"><br><br>
+
+        
+
+    </form>
+
+
+
+    <footer class="pink-border footer" >
+        <h3>made with &#9829; by jennifer</h3>
+     </footer>
+</body>
+</html>
